@@ -26,6 +26,8 @@ public class CifService {
         cif.setTahunLahir(param.getTahunLahir());
         cif.setTanggalLahir(param.getTanggalLAhir());
         cif.setId(param.getFirstName() + param.getLastName() + param.getTanggalLAhir() + param.getBulanLahir() + param.getTahunLahir());
+        cif.setPekerjaan(param.getPekerjaan());
+        cif.setGaji(param.getGaji());
         return cifRepository.save(cif);
     }
 

@@ -2,6 +2,8 @@ package com.alami.recruit.model;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class RegisterParam {
 
@@ -11,4 +13,6 @@ public class RegisterParam {
     private Integer bulanLahir;
     private Integer tahunLahir;
     private String alamat;
+    private String pekerjaan;
+    private BigDecimal gaji;
 }

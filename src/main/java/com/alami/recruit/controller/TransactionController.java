@@ -53,6 +53,7 @@ public class TransactionController {
     @PostMapping("/transaction/between")
     public List<Transaction> getTransactionBetween(@RequestBody DateParam param) throws Exception {
         try {
+            log.info("PARAM = {}", param);
             if (param != null) {
                 return transactionService.getTransactionBetween(param);
             }

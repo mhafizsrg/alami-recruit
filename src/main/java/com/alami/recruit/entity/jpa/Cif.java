@@ -44,6 +44,12 @@ public class Cif {
     @Column(name = "balance", precision = 19, scale = 2, nullable = false)
     private BigDecimal balance;
 
+    @Column(name = "pekerjaan", nullable = false)
+    private String pekerjaan;
+
+    @Column(name = "gaji", precision = 19, scale = 2, nullable = false)
+    private BigDecimal gaji;
+
     public Cif() {
         this.balance = BigDecimal.ZERO;
     }
